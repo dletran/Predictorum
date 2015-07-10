@@ -1,0 +1,1 @@
+Proyecto realizado como trabajo de fin de grado para Ingeniería de Software. El proyecto consiste en una aplicación web cuya funcionalidad principal es la de predecir resultados deportivos e incluye un matiz social.
