@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ * PopulateDatabase.xml
+ *
+ * Copyright (C) 2014 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	">
+	
+	<!-- User accounts -->
+	<bean id="userAccount1" class="security.UserAccount">
+		<property name="username" value="user1" />
+		<property name="password" value="24c9e15e52afc47c225b757e7bee1f9d" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="USER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount2" class="security.UserAccount">
+		<property name="username" value="user2" />
+		<property name="password" value="7e58d63b60197ceb55a1c487989a3720" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="USER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccount3" class="security.UserAccount">
+		<property name="username" value="user3" />
+		<property name="password" value="92877af70a45fd6a2ed7fe81e1236b78" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="USER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+		
+		
+	<bean id="userAccount4" class="security.UserAccount">
+		<property name="username" value="user4" />
+		<property name="password" value="3f02ebe3d7929b091e3d8ccfde2f3bc6" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="USER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- user -->	
+	
+	<bean id="user1" class="domain.User">
+		<property name="name" value="user1"/>
+		<property name="surname" value="user1"/>
+		<property name="email" value="user1@alum.us.es"/>
+		<property name="userAccount" ref="userAccount1"/>
+		<!-- Logo -->
+		<property name="sRPoints" value="10"/>
+		<property name="dRPoints" value="10"/>
+		<property name="sHRPoints" value="10"/>
+		<property name="dHRPoints" value="10"/>
+		<property name="hGPoints" value="10"/>
+		<property name="aGPoints" value="10"/>
+		<property name="hHGPoints" value="10"/>
+		<property name="hAGPoints" value="10"/>
+		<property name="mT25Points" value="10"/>
+		<!-- Relaciones -->
+		<property name="following">
+			<list>		
+			</list>
+		</property>
+		<property name="followers">
+			<list>		
+			</list>
+		</property>
+		<property name="teams">
+			<list>		
+			</list>
+		</property>
+		<property name="comments">
+			<list>		
+			</list>
+		</property>
+		<property name="evaluations">
+			<list>		
+			</list>
+		</property>
+		<property name="predictions">
+			<list>		
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="user2" class="domain.User">
+		<property name="name" value="user2"/>
+		<property name="surname" value="user2"/>
+		<property name="email" value="user2@alum.us.es"/>
+		<property name="userAccount" ref="userAccount2"/>
+		<!-- Logo -->
+		<property name="sRPoints" value="20"/>
+		<property name="dRPoints" value="20"/>
+		<property name="sHRPoints" value="20"/>
+		<property name="dHRPoints" value="20"/>
+		<property name="hGPoints" value="20"/>
+		<property name="aGPoints" value="20"/>
+		<property name="hHGPoints" value="20"/>
+		<property name="hAGPoints" value="20"/>
+		<property name="mT25Points" value="20"/>
+		<!-- Relaciones -->
+		<property name="following">
+			<list>		
+			</list>
+		</property>
+		<property name="followers">
+			<list>
+			</list>
+		</property>
+		<property name="teams">
+			<list>		
+			</list>
+		</property>
+		<property name="comments">
+			<list>		
+			</list>
+		</property>
+		<property name="evaluations">
+			<list>		
+			</list>
+		</property>
+		<property name="predictions">
+			<list>		
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="user3" class="domain.User">
+		<property name="name" value="user3"/>
+		<property name="surname" value="user3"/>
+		<property name="email" value="user3@alum.us.es"/>
+		<property name="userAccount" ref="userAccount3"/>
+		<!-- Logo -->
+		<property name="sRPoints" value="30"/>
+		<property name="dRPoints" value="30"/>
+		<property name="sHRPoints" value="30"/>
+		<property name="dHRPoints" value="30"/>
+		<property name="hGPoints" value="30"/>
+		<property name="aGPoints" value="30"/>
+		<property name="hHGPoints" value="30"/>
+		<property name="hAGPoints" value="30"/>
+		<property name="mT25Points" value="30"/>
+		<!-- Relaciones -->
+		<property name="following">
+			<list>		
+			</list>
+		</property>
+		<property name="followers">
+			<list>		
+			</list>
+		</property>
+		<property name="teams">
+			<list>		
+			</list>
+		</property>
+		<property name="comments">
+			<list>		
+			</list>
+		</property>
+		<property name="evaluations">
+			<list>		
+			</list>
+		</property>
+		<property name="predictions">
+			<list>		
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="user4" class="domain.User">
+		<property name="name" value="user4"/>
+		<property name="surname" value="user4"/>
+		<property name="email" value="user4@alum.us.es"/>
+		<property name="userAccount" ref="userAccount4"/>
+		<!-- Logo -->
+		<property name="sRPoints" value="40"/>
+		<property name="dRPoints" value="40"/>
+		<property name="sHRPoints" value="40"/>
+		<property name="dHRPoints" value="40"/>
+		<property name="hGPoints" value="40"/>
+		<property name="aGPoints" value="40"/>
+		<property name="hHGPoints" value="40"/>
+		<property name="hAGPoints" value="40"/>
+		<property name="mT25Points" value="40"/>
+		<!-- Relaciones -->
+		<property name="following">
+			<list>		
+				<ref bean="user1"/>
+				<ref bean="user3"/>
+			</list>
+		</property>
+		<property name="followers">
+			<list>		
+				<ref bean="user1"/>
+				<ref bean="user3"/>
+			</list>
+		</property>
+		<property name="teams">
+			<list>		
+			</list>
+		</property>
+		<property name="comments">
+			<list>		
+			</list>
+		</property>
+		<property name="evaluations">
+			<list>		
+			</list>
+		</property>
+		<property name="predictions">
+			<list>		
+			</list>
+		</property>
+	</bean>	
+	
+	
+	<bean id="BBVA" class="domain.League">
+		<property name="name" value="BBVA"/>
+		<!-- Relaciones -->
+		<property name="seasons">
+			<list>		
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="Adelante" class="domain.League">
+		<property name="name" value="Adelante"/>
+		<!-- Relaciones -->
+		<property name="seasons">
+			<list>		
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="Bundesliga" class="domain.League">
+		<property name="name" value="Bundesliga"/>
+		<!-- Relaciones -->
+		<property name="seasons">
+			<list>		
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="Calcio" class="domain.League">
+		<property name="name" value="Calcio"/>
+		<!-- Relaciones -->
+		<property name="seasons">
+			<list>		
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="Premier" class="domain.League">
+		<property name="name" value="Premier"/>
+		<!-- Relaciones -->
+		<property name="seasons">
+			<list>		
+			</list>
+		</property>
+	</bean>
+
+
+	
+	
+</beans>

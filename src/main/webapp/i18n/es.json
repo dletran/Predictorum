@@ -1,0 +1,36 @@
+{
+"LEARN_MORE": 				"Cuéntame más",
+"SIGN_IN": 					"Entrar",
+"MENU":						"Menú",
+"SIGN_UP":					"Registrarse",
+"BLANK_ERROR":				"No debe estar en blanco",
+"PASSWORD_MATCH_ERROR":		"Las contraseñas deben ser iguales",
+"NOT_UNIQUE_ERROR":			"El nombre de usuario ya está en uso",
+"HOME":						"INICIO",
+"ABOUT_US":					"SOBRE NOSOTROS",
+"LANGUAGE":					"IDIOMA",
+"SPANISH":					"ESPAÑOL",
+"ENGLISH":					"INGLÉS",
+"ABOUT_PARAGRAPH":			"¡Mezclamos una funcionalidad robusta con facilidad de uso para que puedas satisfacer tus inquietudes futbolísticas cuanto antes!",
+"TEAMS":					"Equipos",
+"INVALID_CREDENTIALS":		"Usuario o contraseña erróneos",
+"SEARCH":					"Buscar",
+"SORT":						"Ordenar",
+"ALPHABETICAL":				"Alfabético",
+"POSITION":					"Posición",
+"ALL":						"Todos",
+"EMPTY_LIST":				"¡Nada que mostrar! :(",
+"FAVORITES":				"Favoritos",				
+"HL1": {
+		"WORD1":			"TODO",
+		"WORD2":			" GRATUITO"
+		},
+"HL2": {
+		"WORD1":			"JUEGA",
+		"WORD2":			" CON AMIGOS"
+		},
+"HL3": {
+		"WORD1":			"PREDICCIONES",
+		"WORD2":			" PRECISAS"
+		}		
+}

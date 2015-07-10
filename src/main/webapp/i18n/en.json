@@ -1,0 +1,36 @@
+{
+"LEARN_MORE": 				"Learn more",
+"SIGN_IN": 					"Sign in",
+"MENU":						"Menu",
+"SIGN_UP":					"Sign up",
+"BLANK_ERROR":				"Must not be blank",
+"PASSWORD_MATCH_ERROR":		"Passwords must match",
+"NOT_UNIQUE_ERROR":			"That username is already in use",
+"HOME":						"HOME",
+"ABOUT_US":					"ABOUT US",
+"LANGUAGE":					"LANGUAGE",
+"SPANISH":					"SPANISH",
+"ENGLISH":					"ENGLISH",
+"ABOUT_PARAGRAPH":			"We match robust functionality with ease of use so you can satisfy your soccer concerns ASAP!",
+"TEAMS":					"Teams",
+"INVALID_CREDENTIALS":		"Invalid credentials",	
+"SEARCH":					"Search",
+"SORT":						"Sort by",
+"ALPHABETICAL":				"Alphabetical",
+"POSITION":					"Position",
+"ALL":						"All",
+"EMPTY_LIST":				"Nothing to show! :(",
+"FAVORITES":				"Favorites",
+"HL1": {
+		"WORD1":			"FREE",
+		"WORD2":			" FEATURES"
+		},
+"HL2": {
+		"WORD1":			"COMPETE",
+		"WORD2":			" WITH FRIENDS"
+		},
+"HL3": {
+		"WORD1":			"ACCURATE",
+		"WORD2":			" PREDICTIONS"
+		}	
+}
