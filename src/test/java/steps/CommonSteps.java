@@ -47,7 +47,6 @@ public class CommonSteps extends BaseUtils {
                 break;
         }
         base.driver.manage().window().maximize();
-        base.driver.manage().deleteAllCookies();
     }
 
     @And("^user sets (.*) field with value (\\w*)$")
