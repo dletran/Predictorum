@@ -79,13 +79,13 @@
 						<!-- Top Logo -->
 						<div class="top-logo">
 							<div class="scrollNormal">
-								<a href="#welcome" scroll-to="welcome"> <img width="140"
+								<a id="logo_welcome" href="#welcome" scroll-to="welcome"> <img width="140"
 									height="140" alt="Predictorum"
 									src="static/img/logo_welcome.png">
 								</a>
 							</div>
 							<div class="scrollDown">
-								<a href="#" scroll-to="welcome"> <img width="140"
+								<a id="logo2_welcome" href="#" scroll-to="welcome"> <img width="140"
 									height="140" alt="Predictorum"
 									src="static/img/logo2_welcome.png">
 								</a>
@@ -100,16 +100,17 @@
 							<li><span class="text-color" translate>HL1.WORD1</span> <span
 								translate>HL1.WORD2</span></li>
 						</ul>
-						<a href="#" scroll-to="aboutUs" class="btn btn-1 img-btn"
+						<a id="about_us_welcome" href="#" scroll-to="aboutUs" class="btn btn-1 img-btn"
 							style="margin-right: 5px;"><span translate>LEARN_MORE</span></a>
-						<a ng-show="!showMenu" href="#" class="btn btn-1 img-btn" scroll-to="welcome"><span
+						<a id="sign_in_welcome" ng-show="!showMenu" href="#" class="btn btn-1 img-btn" scroll-to="welcome"><span
 							translate>SIGN_IN</span></a>
-						<a ng-show="showMenu" href="#" class="btn btn-1 img-btn" scroll-to="welcome"><span
+						<a id="menu_welcome" ng-show="showMenu" href="#" class="btn btn-1 img-btn" scroll-to="welcome"><span
 							translate>MENU</span></a>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 		<!--/Image Background Parallax -->
 
 		<!-- Header -->
@@ -194,12 +195,12 @@
 									<div class="row text-center" style="height: 300px;">
 										<div class="col-md-2"></div>
 										<div class="col-md-8">
-											<form id="signup" ng-submit="goLogin()">
+											<form id="sign_in" ng-submit="goLogin()">
 												<fieldset>
-													<input data-ng-model="login.user"
+													<input id="sign_in_user" data-ng-model="login.user"
 														class="form-control wow fadeInLeft" type="text"
 														placeholder="Username" style="margin-bottom: 5%;">
-													<input data-ng-model="login.password"
+													<input id="sign_in_password" data-ng-model="login.password"
 														class="form-control wow fadeInLeft" type="password"
 														placeholder="Password" style="margin: auto;">
 													<p ng-if="login.result=='ERROR'" class="error" translate>
@@ -230,15 +231,15 @@
 									<div class="row text-center">
 										<div class="col-md-2"></div>
 										<div class="col-md-8">
-											<form id="signup" name="signUpForm" ng-submit="goSignUp()" novalidate>
+											<form id="sign_up" name="signUpForm" ng-submit="goSignUp()" novalidate>
 												<fieldset>
-													<input ng-class="{'ng-submitted ng-invalid': notUniqueError}" class="form-control wow fadeInLeft" type="text"
+													<input id="sign_up_user" ng-class="{'ng-submitted ng-invalid': notUniqueError}" class="form-control wow fadeInLeft" type="text"
 														placeholder="Username" data-ng-model="signUp.username" style="margin-bottom: 5%;" required>
 								
-													<input ng-class="{'ng-submitted ng-invalid': passwordMatchError}"  class="form-control wow fadeInLeft" type="password"
+													<input id="sign_up_password" ng-class="{'ng-submitted ng-invalid': passwordMatchError}"  class="form-control wow fadeInLeft" type="password"
 														placeholder="Password" data-ng-model="signUp.password" style="margin: auto;" required> 
 													
-													<input ng-class="{'ng-submitted ng-invalid': passwordMatchError}" 
+													<input id="sign_up_repassword" ng-class="{'ng-submitted ng-invalid': passwordMatchError}"
 														class="form-control wow fadeInLeft" type="password"
 														placeholder="Repeat Password" data-ng-model="signUp.rpassword" required>
 													<span class="error" ng-show="blankError&&signUpSubmitted" translate>BLANK_ERROR</span>
